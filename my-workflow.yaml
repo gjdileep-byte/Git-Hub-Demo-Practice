@@ -15,10 +15,4 @@ jobs:
     steps:
       - name: Final Step
         run: echo "Hello from Final Step - Job-2"
-  job-3:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Another Step
-        run: echo "Hello from Another Step - Job-3"
-      - name: Final Step
-        run: echo "Hello from Final Step - Job-4"  
+  
