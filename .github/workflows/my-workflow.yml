@@ -1,14 +1,17 @@
-name: My first Workflow
-on: push:
+name: My First Workflow
+on: push
+
 jobs:
-  my-first-job:
+  job-1:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.  
+      - name: Step 1
+        run: echo "Hello from Step 1"
+      - name: Step 2
+        run: echo "Hello from Step 2"
+
+  job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Final Step
+        run: echo "Hello from Final Step - Job-2"
