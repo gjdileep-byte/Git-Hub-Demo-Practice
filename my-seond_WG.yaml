@@ -1,5 +1,9 @@
-job-3:
+name: My Seond Workflow
+on: push
+
+jobs:
+  job-3:
     runs-on: ubuntu-latest
     steps:
       - name: Final Step
-        run: echo "Hello from another Step - Job-4"  
+        run: echo "Hello from another Step - Job-3"  
